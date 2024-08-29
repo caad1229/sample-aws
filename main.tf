@@ -24,3 +24,9 @@ resource "aws_instance" "app_server" {
     Project = "mixi"
   }
 }
+
+module "rds-sasaki" {
+  source  = "app.terraform.io/MIXI/rds-sasaki/aws"
+  version = "1.0.0"
+  # insert required variables here
+}
